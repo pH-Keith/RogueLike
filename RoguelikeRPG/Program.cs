@@ -10,6 +10,39 @@ namespace RoguelikeRPG
     {
         static void Main(string[] args)
         {
+            Random random = new Random();
+           
+            
+            ObjectsList obj = new ObjectsList("ObjectsList.txt");
+            List<ObjectData> test = new List<ObjectData>();
+            Grid g = new Grid();
+            Player player = new Player(0, random.Next(0, 8));
+            
+            GameLoop gameLoop = new GameLoop();
+            g.tiles[player.X,player.Y].Objects.Push(player);
+            //g.UpdatePositions();
+            Renderer render = new Renderer(player,g);
+            InputManager input = new InputManager(player, g, render, gameLoop);
+            while (gameLoop.inGame)
+            {
+               
+                g.UpdateKnownPlaces(player);
+                switch(gameLoop.State)
+                {
+                    case "Start":
+                        render.RenderStartScreen();
+                        input.StartScreenCommand();
+                        break;
+                    case "Game":
+                        render.RenderUI();
+                        input.TurnCommand();
+                        break;
+                    case "Credits":
+                        render.RenderCredits();
+                        input.CreditCommands();
+                        break;
+                }
+            }
         }
     }
 }
