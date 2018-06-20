@@ -1,0 +1,112 @@
+\hypertarget{class_roguelike_r_p_g_1_1_player}{}\section{Roguelike\+R\+P\+G.\+Player Class Reference}
+\label{class_roguelike_r_p_g_1_1_player}\index{Roguelike\+R\+P\+G.\+Player@{Roguelike\+R\+P\+G.\+Player}}
+
+
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} sub type from \mbox{\hyperlink{class_roguelike_r_p_g_1_1_character}{Character}}.  
+
+
+Inheritance diagram for Roguelike\+R\+P\+G.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_roguelike_r_p_g_1_1_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player_a998f3a9a1b1849f460689ec87ce14b72}{Player}} (int X, int Y)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} with the given coordinates of X and Y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player_ac0ed6040b097a55a18e19ee9e604f5de}{Attack}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} target)
+\begin{DoxyCompactList}\small\item\em Attacks the enemy \mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} with current weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player_ae8cdb59fd33dbc6f1b8cc3c17f15908e}{Eat}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} food)
+\begin{DoxyCompactList}\small\item\em Consomes Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player_a9851fb6d029e554484fc11bb345b1632}{Pickup\+Item}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_item}{Item}} item)
+\begin{DoxyCompactList}\small\item\em Picks up specified item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_a193007784493dc32f358c748194a9232}\label{class_roguelike_r_p_g_1_1_player_a193007784493dc32f358c748194a9232}} 
+List$<$ \mbox{\hyperlink{class_roguelike_r_p_g_1_1_item}{Item}} $>$ {\bfseries Backpack} = new List$<$\mbox{\hyperlink{class_roguelike_r_p_g_1_1_item}{Item}}$>$()
+\item 
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_ac63a134363b5f4f73cb1cdd214be81b1}\label{class_roguelike_r_p_g_1_1_player_ac63a134363b5f4f73cb1cdd214be81b1}} 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} {\bfseries Selected\+Weapon}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} sub type from \mbox{\hyperlink{class_roguelike_r_p_g_1_1_character}{Character}}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_a998f3a9a1b1849f460689ec87ce14b72}\label{class_roguelike_r_p_g_1_1_player_a998f3a9a1b1849f460689ec87ce14b72}} 
+\index{Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}!Player@{Player}}
+\index{Player@{Player}!Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Player.\+Player (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} with the given coordinates of X and Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & X axis of the player\textquotesingle{}s initial location.\\
+\hline
+{\em Y} & Y axis of the player\textquotesingle{}s initial location.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_ac0ed6040b097a55a18e19ee9e604f5de}\label{class_roguelike_r_p_g_1_1_player_ac0ed6040b097a55a18e19ee9e604f5de}} 
+\index{Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}!Attack@{Attack}}
+\index{Attack@{Attack}!Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}}
+\subsubsection{\texorpdfstring{Attack()}{Attack()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Player.\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attacks the enemy \mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} with current weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target \mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_ae8cdb59fd33dbc6f1b8cc3c17f15908e}\label{class_roguelike_r_p_g_1_1_player_ae8cdb59fd33dbc6f1b8cc3c17f15908e}} 
+\index{Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}!Eat@{Eat}}
+\index{Eat@{Eat}!Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}}
+\subsubsection{\texorpdfstring{Eat()}{Eat()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Player.\+Eat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}}}]{food }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consomes Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em food} & \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} to be eaten\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_player_a9851fb6d029e554484fc11bb345b1632}\label{class_roguelike_r_p_g_1_1_player_a9851fb6d029e554484fc11bb345b1632}} 
+\index{Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}!Pickup\+Item@{Pickup\+Item}}
+\index{Pickup\+Item@{Pickup\+Item}!Roguelike\+R\+P\+G\+::\+Player@{Roguelike\+R\+P\+G\+::\+Player}}
+\subsubsection{\texorpdfstring{Pickup\+Item()}{PickupItem()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Player.\+Pickup\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Picks up specified item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+cs\end{DoxyCompactItemize}

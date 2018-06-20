@@ -1,0 +1,100 @@
+\hypertarget{class_roguelike_r_p_g_1_1_trap}{}\section{Roguelike\+R\+P\+G.\+Trap Class Reference}
+\label{class_roguelike_r_p_g_1_1_trap}\index{Roguelike\+R\+P\+G.\+Trap@{Roguelike\+R\+P\+G.\+Trap}}
+
+
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}} sub type from \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}}.  
+
+
+Inheritance diagram for Roguelike\+R\+P\+G.\+Trap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_roguelike_r_p_g_1_1_trap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap_a75f7e3f09db85a57be63fea667c72ad9}{Trap}} (\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}} obj, int x, int y)
+\begin{DoxyCompactList}\small\item\em Handles initialization of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap_a29a26903d96d45aee7a705fdbb191418}{Trap\+Action}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Checks if the player is in a trap tile in the grid, checks if said trap is triggered already or not and finally deals damage if it hasnt been triggered already. Causing the Traps state to be Triggered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap_a2be484e07ac0dba84b5f1a8d5235db67}{Triggered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles the managment of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}}\textquotesingle{}s State of being Triggered. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap_a4a52d250eebe047304262c389b4f82c7}{Max\+Damage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles the managment of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}}\textquotesingle{}s Max Damage, cannot be changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}} sub type from \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_trap_a75f7e3f09db85a57be63fea667c72ad9}\label{class_roguelike_r_p_g_1_1_trap_a75f7e3f09db85a57be63fea667c72ad9}} 
+\index{Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}!Trap@{Trap}}
+\index{Trap@{Trap}!Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}}
+\subsubsection{\texorpdfstring{Trap()}{Trap()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Trap.\+Trap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}}}]{obj,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handles initialization of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_trap_a29a26903d96d45aee7a705fdbb191418}\label{class_roguelike_r_p_g_1_1_trap_a29a26903d96d45aee7a705fdbb191418}} 
+\index{Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}!Trap\+Action@{Trap\+Action}}
+\index{Trap\+Action@{Trap\+Action}!Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}}
+\subsubsection{\texorpdfstring{Trap\+Action()}{TrapAction()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Trap.\+Trap\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the player is in a trap tile in the grid, checks if said trap is triggered already or not and finally deals damage if it hasnt been triggered already. Causing the Traps state to be Triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_trap_a4a52d250eebe047304262c389b4f82c7}\label{class_roguelike_r_p_g_1_1_trap_a4a52d250eebe047304262c389b4f82c7}} 
+\index{Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}!Max\+Damage@{Max\+Damage}}
+\index{Max\+Damage@{Max\+Damage}!Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}}
+\subsubsection{\texorpdfstring{Max\+Damage}{MaxDamage}}
+{\footnotesize\ttfamily float Roguelike\+R\+P\+G.\+Trap.\+Max\+Damage\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Handles the managment of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}}\textquotesingle{}s Max Damage, cannot be changed. 
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_trap_a2be484e07ac0dba84b5f1a8d5235db67}\label{class_roguelike_r_p_g_1_1_trap_a2be484e07ac0dba84b5f1a8d5235db67}} 
+\index{Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}!Triggered@{Triggered}}
+\index{Triggered@{Triggered}!Roguelike\+R\+P\+G\+::\+Trap@{Roguelike\+R\+P\+G\+::\+Trap}}
+\subsubsection{\texorpdfstring{Triggered}{Triggered}}
+{\footnotesize\ttfamily bool Roguelike\+R\+P\+G.\+Trap.\+Triggered\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Handles the managment of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_trap}{Trap}}\textquotesingle{}s State of being Triggered. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Trap.\+cs\end{DoxyCompactItemize}

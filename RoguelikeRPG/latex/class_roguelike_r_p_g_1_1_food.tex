@@ -1,0 +1,88 @@
+\hypertarget{class_roguelike_r_p_g_1_1_food}{}\section{Roguelike\+R\+P\+G.\+Food Class Reference}
+\label{class_roguelike_r_p_g_1_1_food}\index{Roguelike\+R\+P\+G.\+Food@{Roguelike\+R\+P\+G.\+Food}}
+
+
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} sub type from items.  
+
+
+Inheritance diagram for Roguelike\+R\+P\+G.\+Food\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_roguelike_r_p_g_1_1_food}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_food_adab425fc62ac669c0c0155f1fa109dab}{Food}} (\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}} obj, int x, int y)
+\begin{DoxyCompactList}\small\item\em Initializer of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} Object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food_a422486d8f892efec7859a7a62fa39af0}{Use}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} p)
+\begin{DoxyCompactList}\small\item\em Uses the item, removing it from the backpack and adding the health it gives, while making sure there isnt an overheal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food_a644766aa45f4a118e3b2857c21221352}{H\+P\+Increase}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Holds the ammount of HP said item will add when consumed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} sub type from items. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_food_adab425fc62ac669c0c0155f1fa109dab}\label{class_roguelike_r_p_g_1_1_food_adab425fc62ac669c0c0155f1fa109dab}} 
+\index{Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}!Food@{Food}}
+\index{Food@{Food}!Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}}
+\subsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Food.\+Food (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}}}]{obj,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializer of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_food}{Food}} Object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Struct that is used to define the object.\\
+\hline
+{\em x} & X location\\
+\hline
+{\em y} & Y location\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_food_a422486d8f892efec7859a7a62fa39af0}\label{class_roguelike_r_p_g_1_1_food_a422486d8f892efec7859a7a62fa39af0}} 
+\index{Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}!Use@{Use}}
+\index{Use@{Use}!Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}}
+\subsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Food.\+Use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Uses the item, removing it from the backpack and adding the health it gives, while making sure there isnt an overheal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_food_a644766aa45f4a118e3b2857c21221352}\label{class_roguelike_r_p_g_1_1_food_a644766aa45f4a118e3b2857c21221352}} 
+\index{Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}!H\+P\+Increase@{H\+P\+Increase}}
+\index{H\+P\+Increase@{H\+P\+Increase}!Roguelike\+R\+P\+G\+::\+Food@{Roguelike\+R\+P\+G\+::\+Food}}
+\subsubsection{\texorpdfstring{H\+P\+Increase}{HPIncrease}}
+{\footnotesize\ttfamily float Roguelike\+R\+P\+G.\+Food.\+H\+P\+Increase\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holds the ammount of HP said item will add when consumed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Food.\+cs\end{DoxyCompactItemize}

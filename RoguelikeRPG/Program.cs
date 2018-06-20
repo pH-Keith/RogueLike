@@ -21,7 +21,7 @@ namespace RoguelikeRPG
             GameLoop gameLoop = new GameLoop();
             g.tiles[player.X,player.Y].Objects.Push(player);
             //g.UpdatePositions();
-            Renderer render = new Renderer(player,g);
+            Renderer render = new Renderer(player,g, gameLoop);
             InputManager input = new InputManager(player, g, render, gameLoop);
             while (gameLoop.inGame)
             {

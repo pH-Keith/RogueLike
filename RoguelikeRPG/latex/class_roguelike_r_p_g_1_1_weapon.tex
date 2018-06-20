@@ -1,0 +1,124 @@
+\hypertarget{class_roguelike_r_p_g_1_1_weapon}{}\section{Roguelike\+R\+P\+G.\+Weapon Class Reference}
+\label{class_roguelike_r_p_g_1_1_weapon}\index{Roguelike\+R\+P\+G.\+Weapon@{Roguelike\+R\+P\+G.\+Weapon}}
+
+
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} sub type from items.  
+
+
+Inheritance diagram for Roguelike\+R\+P\+G.\+Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_roguelike_r_p_g_1_1_weapon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon_a150f41f8b59b68c93eba9b01efa812b9}{Weapon}} (\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}} obj, int x, int y)
+\begin{DoxyCompactList}\small\item\em Handles initialization of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon_abc7ba430a40dc00c52d2ae10a1005eeb}{Use}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} npc)
+\begin{DoxyCompactList}\small\item\em Damages said \mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} with the weapon\textquotesingle{}s Attack Power \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon_a08c34d6e41739612a4c69fd019fce3d7}{Equip}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} equips the selected \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}}. Removing it from his Backpack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon_a583cc9a8265e81bc38d69851bdd6d36a}{Pick\+Up}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Adds the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} to the Backpack of the player, on the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}. Removing it from the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} after. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon_a68ffbf4b9ebe1e99d879c18021dba80b}{Attack\+Power}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Handles the managment of the weapon\textquotesingle{}s Attack Power. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles all of the functions in regards to the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} sub type from items. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_weapon_a150f41f8b59b68c93eba9b01efa812b9}\label{class_roguelike_r_p_g_1_1_weapon_a150f41f8b59b68c93eba9b01efa812b9}} 
+\index{Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}}
+\subsubsection{\texorpdfstring{Weapon()}{Weapon()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Weapon.\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_roguelike_r_p_g_1_1_object_data}{Object\+Data}}}]{obj,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handles initialization of the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Struct that holds all of the information regarding the weapon we are initializing\\
+\hline
+{\em x} & X cordinate\\
+\hline
+{\em y} & Y cordinate\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_weapon_a08c34d6e41739612a4c69fd019fce3d7}\label{class_roguelike_r_p_g_1_1_weapon_a08c34d6e41739612a4c69fd019fce3d7}} 
+\index{Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}!Equip@{Equip}}
+\index{Equip@{Equip}!Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}}
+\subsubsection{\texorpdfstring{Equip()}{Equip()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Weapon.\+Equip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} equips the selected \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}}. Removing it from his Backpack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_weapon_a583cc9a8265e81bc38d69851bdd6d36a}\label{class_roguelike_r_p_g_1_1_weapon_a583cc9a8265e81bc38d69851bdd6d36a}} 
+\index{Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}!Pick\+Up@{Pick\+Up}}
+\index{Pick\+Up@{Pick\+Up}!Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}}
+\subsubsection{\texorpdfstring{Pick\+Up()}{PickUp()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Weapon.\+Pick\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_weapon}{Weapon}} to the Backpack of the player, on the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}. Removing it from the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} after. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}\\
+\hline
+{\em grid} & Specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_weapon_abc7ba430a40dc00c52d2ae10a1005eeb}\label{class_roguelike_r_p_g_1_1_weapon_abc7ba430a40dc00c52d2ae10a1005eeb}} 
+\index{Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}!Use@{Use}}
+\index{Use@{Use}!Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}}
+\subsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Weapon.\+Use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}}}]{npc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Damages said \mbox{\hyperlink{class_roguelike_r_p_g_1_1_n_p_c}{N\+PC}} with the weapon\textquotesingle{}s Attack Power 
+
+
+\begin{DoxyParams}{Parameters}
+{\em npc} & Targeted Enemy\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_weapon_a68ffbf4b9ebe1e99d879c18021dba80b}\label{class_roguelike_r_p_g_1_1_weapon_a68ffbf4b9ebe1e99d879c18021dba80b}} 
+\index{Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}!Attack\+Power@{Attack\+Power}}
+\index{Attack\+Power@{Attack\+Power}!Roguelike\+R\+P\+G\+::\+Weapon@{Roguelike\+R\+P\+G\+::\+Weapon}}
+\subsubsection{\texorpdfstring{Attack\+Power}{AttackPower}}
+{\footnotesize\ttfamily float Roguelike\+R\+P\+G.\+Weapon.\+Attack\+Power\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Handles the managment of the weapon\textquotesingle{}s Attack Power. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weapon.\+cs\end{DoxyCompactItemize}

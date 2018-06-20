@@ -1,0 +1,160 @@
+\hypertarget{class_roguelike_r_p_g_1_1_tile}{}\section{Roguelike\+R\+P\+G.\+Tile Class Reference}
+\label{class_roguelike_r_p_g_1_1_tile}\index{Roguelike\+R\+P\+G.\+Tile@{Roguelike\+R\+P\+G.\+Tile}}
+
+
+A Class that is used to populate the grid and to also store objects.  
+
+
+Inheritance diagram for Roguelike\+R\+P\+G.\+Tile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_roguelike_r_p_g_1_1_tile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_a84a16dca9f4ac818eca0eb58f7c5418b}{Remove\+Element}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} obj)
+\begin{DoxyCompactList}\small\item\em Used to remove said object in specified tile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_ac00f81529ef711a7875d3810749a729d}{Tile}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile}{Tile}} initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_a48756f2f22db20e7c765c0d56f5a36f3}{Update\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} on the tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_a4540cd9d2fb8989e65778bcffbbe340f}{Add\+Object}} (int ID)
+\begin{DoxyCompactList}\small\item\em Adds Objects into tiles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a495e7ee559a4006f4e845ab348b70333}\label{class_roguelike_r_p_g_1_1_tile_a495e7ee559a4006f4e845ab348b70333}} 
+override string {\bfseries To\+String} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_acaff404969d6ec22a857844a3da768e6}\label{class_roguelike_r_p_g_1_1_tile_acaff404969d6ec22a857844a3da768e6}} 
+Stack$<$ \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} $>$ {\bfseries Objects} = new Stack$<$\mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}}$>$()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_aa70af4c518d3e04eb0488460ebbbb091}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines its position in the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} on the X axis. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_abc0553a51f38c39df5d62a6595b9552f}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Defines its position in the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} on the Y axis. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_a1cee19c16fed5cfdd655487f5e79e5c8}{Unknown}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Manages the Fog of war element by holding the information that it has already been found or has yet to be found. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile_a67c61a973f25af77d07a12e50b3825f2}{Is\+Exit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Class that is used to populate the grid and to also store objects. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_ac00f81529ef711a7875d3810749a729d}\label{class_roguelike_r_p_g_1_1_tile_ac00f81529ef711a7875d3810749a729d}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Tile.\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile}{Tile}} initialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a4540cd9d2fb8989e65778bcffbbe340f}\label{class_roguelike_r_p_g_1_1_tile_a4540cd9d2fb8989e65778bcffbbe340f}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Add\+Object@{Add\+Object}}
+\index{Add\+Object@{Add\+Object}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Add\+Object()}{AddObject()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Tile.\+Add\+Object (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds Objects into tiles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a84a16dca9f4ac818eca0eb58f7c5418b}\label{class_roguelike_r_p_g_1_1_tile_a84a16dca9f4ac818eca0eb58f7c5418b}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Remove\+Element@{Remove\+Element}}
+\index{Remove\+Element@{Remove\+Element}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Remove\+Element()}{RemoveElement()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Tile.\+Remove\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Used to remove said object in specified tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & Object to be removed.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a48756f2f22db20e7c765c0d56f5a36f3}\label{class_roguelike_r_p_g_1_1_tile_a48756f2f22db20e7c765c0d56f5a36f3}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Update\+Pos@{Update\+Pos}}
+\index{Update\+Pos@{Update\+Pos}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Update\+Pos()}{UpdatePos()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Tile.\+Update\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the position of specified \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} on the tile. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a67c61a973f25af77d07a12e50b3825f2}\label{class_roguelike_r_p_g_1_1_tile_a67c61a973f25af77d07a12e50b3825f2}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Is\+Exit@{Is\+Exit}}
+\index{Is\+Exit@{Is\+Exit}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Is\+Exit}{IsExit}}
+{\footnotesize\ttfamily bool Roguelike\+R\+P\+G.\+Tile.\+Is\+Exit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_a1cee19c16fed5cfdd655487f5e79e5c8}\label{class_roguelike_r_p_g_1_1_tile_a1cee19c16fed5cfdd655487f5e79e5c8}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Unknown@{Unknown}}
+\index{Unknown@{Unknown}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Unknown}{Unknown}}
+{\footnotesize\ttfamily bool Roguelike\+R\+P\+G.\+Tile.\+Unknown\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Manages the Fog of war element by holding the information that it has already been found or has yet to be found. 
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_aa70af4c518d3e04eb0488460ebbbb091}\label{class_roguelike_r_p_g_1_1_tile_aa70af4c518d3e04eb0488460ebbbb091}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!X@{X}}
+\index{X@{X}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily int Roguelike\+R\+P\+G.\+Tile.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines its position in the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} on the X axis. 
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_tile_abc0553a51f38c39df5d62a6595b9552f}\label{class_roguelike_r_p_g_1_1_tile_abc0553a51f38c39df5d62a6595b9552f}} 
+\index{Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}!Y@{Y}}
+\index{Y@{Y}!Roguelike\+R\+P\+G\+::\+Tile@{Roguelike\+R\+P\+G\+::\+Tile}}
+\subsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily int Roguelike\+R\+P\+G.\+Tile.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defines its position in the \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} on the Y axis. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tile.\+cs\end{DoxyCompactItemize}

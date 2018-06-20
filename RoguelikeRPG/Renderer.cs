@@ -20,10 +20,12 @@ namespace RoguelikeRPG
         /// </summary>
         /// <param name="player"></param>
         /// <param name="grid"></param>
-        public Renderer(Player player, Grid grid)
+        /// <param name="gameLoop"></param>
+        public Renderer(Player player, Grid grid, GameLoop gameLoop)
         {
             this.player = player;
             this.grid = grid;
+            this.gameLoop = gameLoop;
         }
         /// <summary>
         /// Renders the Start Screen with WriteLine's

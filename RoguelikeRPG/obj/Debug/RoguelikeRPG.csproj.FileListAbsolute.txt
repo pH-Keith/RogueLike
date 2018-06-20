@@ -1,1 +1,9 @@
 C:\Users\Dudu Loyola\Source\Repos\RogueLike\RoguelikeRPG\bin\Debug\RoguelikeRPG.exe.config
+D:\School work\poop3\RoguelikeRPG\bin\Debug\RoguelikeRPG.exe.config
+D:\School work\poop3\RoguelikeRPG\bin\Debug\RoguelikeRPG.xml
+D:\School work\poop3\RoguelikeRPG\bin\Debug\RoguelikeRPG.exe
+D:\School work\poop3\RoguelikeRPG\bin\Debug\RoguelikeRPG.pdb
+D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.csprojResolveAssemblyReference.cache
+D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.csproj.CoreCompileInputs.cache
+D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.exe
+D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.pdb
