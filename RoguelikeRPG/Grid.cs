@@ -5,15 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RoguelikeRPG
-{
+{/// <summary>
+/// Class that stores all the tiles
+/// </summary>
     class Grid
     {
-        Map map;
+        public Map map { get; set; }
         Random random = new Random();
         public Grid()
         {
             this.Fill(0);
         }
+        /// <summary>
+        /// Function that updates the X and Y values of the objects within the grid
+        /// </summary>
         public void UpdatePositions()
         {
             for (int i = 0; i < 8; i++)
@@ -24,6 +29,11 @@ namespace RoguelikeRPG
                 }
             }
         }
+        /// <summary>
+        /// Function that returns all elements of the given type in the grid
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public List<GameObject> GetGameObjectsOfType<T>()
         {
             List<GameObject> tmp = new List<GameObject>();
@@ -40,6 +50,10 @@ namespace RoguelikeRPG
             }
             return tmp;
         }
+        /// <summary>
+        /// Function that shows the map around the player
+        /// </summary>
+        /// <param name="p"></param>
         public void UpdateKnownPlaces(Player p)
         {
             if (p.X != 0)
@@ -53,6 +67,10 @@ namespace RoguelikeRPG
             tiles[p.X, p.Y].Unknown = false;
         }
         public Tile[,] tiles = new Tile[8, 8];
+        /// <summary>
+        /// Function that fills the grid with GameObjects
+        /// </summary>
+        /// <param name="level"></param>
         public void Fill(int level)
         {
             for (int i = 0; i < 8; i++)
@@ -66,7 +84,7 @@ namespace RoguelikeRPG
             int tmpY = random.Next(0, 8);
             //Spawning the map
             tiles[tmpX, tmpY].Objects.Push(new Map(tmpX, tmpY));
-
+            map = (tiles[tmpX, tmpY].Objects.Peek() as Map);
             //Defining the exit
             tiles[7, random.Next(0, 8)].IsExit = true;
 
@@ -90,16 +108,6 @@ namespace RoguelikeRPG
             {
                 tiles[random.Next(0, 8), random.Next(0, 8)].AddObject(3); // NEEEED CHANGES ABOUT THE ID RANGE}
             }
-
-            //List<GameObject> tmp = new List<GameObject>();
-            //tmp = this.GetGameObjectsOfType<NPC>();
-
-            //for (int i = 0; i < hostilesN; i++)
-            //{
-            //    int tmpR = random.Next(0, tmp.Count);
-            //    (tiles[tmp[tmpR].X, tmp[tmpR].Y].Objects.First(obj => obj is NPC) as NPC).Hostile = true;//(is NPC,true);
-            //    tmp.RemoveAt(tmpR);
-            //}
         }
     }
 }
