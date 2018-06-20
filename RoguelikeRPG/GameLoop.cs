@@ -22,7 +22,7 @@ namespace RoguelikeRPG
 
         public void Turn(Player player)
         {
-
+            
         }
     }
 }

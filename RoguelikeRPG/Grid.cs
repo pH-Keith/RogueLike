@@ -8,7 +8,6 @@ namespace RoguelikeRPG
 {
     class Grid
     {
-        Map map;
         Random random = new Random();
         public Grid()
         {
@@ -62,10 +61,6 @@ namespace RoguelikeRPG
                     tiles[i, j] = new Tile(i, j);
                 }
             }
-            int tmpX = random.Next(0, 8);
-            int tmpY = random.Next(0, 8);
-            //Spawning the map
-            tiles[tmpX, tmpY].Objects.Push(new Map(tmpX, tmpY));
 
             //Defining the exit
             tiles[7, random.Next(0, 8)].IsExit = true;
@@ -73,10 +68,8 @@ namespace RoguelikeRPG
             int itemN, npcN, trapN, hostilesN;
             //pegar de ficheiro
             itemN = 15 - (2 * level);
-            if (itemN <= 0)
-                itemN = 2;
             npcN = 10 + (2 * level);
-            trapN = 3 * level + 1;
+            trapN = 4 * level +1 ;
             hostilesN = 3 * level;
             for (int i = 0; i < itemN; i++)
             {

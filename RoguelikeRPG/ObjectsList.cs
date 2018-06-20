@@ -3,24 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace RoguelikeRPG
-{
-    class ObjectsList
-    {
-    }
-}
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 
 namespace RoguelikeRPG
 {
-
     public struct ObjectData
     {
         public string name, icon, type;
@@ -40,7 +27,7 @@ namespace RoguelikeRPG
         public ObjectData GetObjInfo(int ID)
         {
             ObjectData tmp = new ObjectData();
-            foreach (ObjectData obj in Objects)
+            foreach(ObjectData obj in Objects)
             {
                 if (obj.id == ID)
                     tmp = obj;

@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace RoguelikeRPG
 {
+    /// <summary>
+    /// Class that manages the inputs of the user.
+    /// </summary>
     class InputManager
     {
         private Player player;
-        private Map map;
         private Grid grid;
         private Renderer render;
         private GameLoop gameLoop;
-        public InputManager(Player player, Grid grid, Renderer render, GameLoop gameLoop, Map map)
+        public InputManager(Player player, Grid grid, Renderer render, GameLoop gameLoop)
         {
             this.grid = grid;
             this.player = player;
             this.render = render;
             this.gameLoop = gameLoop;
-            this.map = map;
 
         }
         public void TurnCommand()
@@ -43,8 +44,6 @@ namespace RoguelikeRPG
                     player.HP--;
                     break;
                 case ConsoleKey.E:
-                    if (player.X == map.X && player.Y == map.Y)
-                        map.Use();
                     break;
             }
         }
