@@ -6,19 +6,28 @@ using System.Threading.Tasks;
 
 namespace RoguelikeRPG
 {
+    /// <summary>
+    /// Class that handles of the rendering used.
+    /// </summary>
     class Renderer
     {
 
         Grid grid = new Grid();
         Player player = new Player(0, 0);
         GameLoop gameLoop = new GameLoop();
-
+        /// <summary>
+        /// Initializes the renderer.
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="grid"></param>
         public Renderer(Player player, Grid grid)
         {
             this.player = player;
             this.grid = grid;
         }
-
+        /// <summary>
+        /// Renders the Start Screen with WriteLine's
+        /// </summary>
         public void RenderStartScreen()
         {
             Console.Clear();
@@ -31,6 +40,9 @@ namespace RoguelikeRPG
             Console.WriteLine(" 3. Credits");
             Console.WriteLine(" 4. Quit");
         }
+        /// <summary>
+        /// Renders the Credits with WriteLine's.
+        /// </summary>
         public void RenderCredits()
         {
             Console.Clear();
@@ -39,10 +51,12 @@ namespace RoguelikeRPG
             Console.WriteLine("\t\t" + "Antonio Louro");
             Console.WriteLine("\t\t" + "Paulo Ramires");
         }
-
+        /// <summary>
+        /// Renders the UI with WriteLine's
+        /// </summary>
         public void RenderUI()
         {
-
+            
             int lineCounter = 0;
             List<string> lines = new List<string>();
 
@@ -62,7 +76,7 @@ namespace RoguelikeRPG
             lines.Add("  " + "HP        - " + player.HP);
             lines.Add("  " + "Weapon    - " + player.SelectedWeapon);
             lines.Add("  " + "Inventory - " + "Player.Backpack.Perc" + " full");
-            lines.Add("  ");
+            lines.Add("  "); 
             lines.Add("  ");
             lines.Add("  ");
             lines.Add("  ");
@@ -81,8 +95,8 @@ namespace RoguelikeRPG
             lines.Add(" REPLACE THIS");
             lines.Add(" REPLACE THIS");
             lines.Add(" LAST OF THIS");
-
-
+ 
+            
             for (int i = 0; i < 8; i++)
             {
                 string tmpL = null;
@@ -124,7 +138,7 @@ namespace RoguelikeRPG
                 "  " +
                 "(a) move West" +
                 "  " +
-                "(s) move South" +
+                "(s) move South" + 
                 "  " +
                 "(d) move East");
 
