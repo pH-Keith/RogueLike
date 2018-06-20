@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['objectdata',['ObjectData',['../struct_roguelike_r_p_g_1_1_object_data.html',1,'RoguelikeRPG']]],
-  ['objectslist',['ObjectsList',['../class_roguelike_r_p_g_1_1_objects_list.html',1,'RoguelikeRPG']]]
+  ['npc',['NPC',['../class_roguelike_r_p_g_1_1_n_p_c.html',1,'RoguelikeRPG.NPC'],['../class_roguelike_r_p_g_1_1_n_p_c.html#a2df0707bbdfb1078c414b87a1dd4cf5c',1,'RoguelikeRPG.NPC.NPC()']]]
 ];

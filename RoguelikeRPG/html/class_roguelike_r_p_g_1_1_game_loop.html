@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RogueLikeRPG: RoguelikeRPG.GameLoop Class Reference</title>
+<title>RoguelikeRPG: RoguelikeRPG.GameLoop Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">RogueLikeRPG
+   <div id="projectname">RoguelikeRPG
    </div>
   </td>
  </tr>
@@ -73,12 +73,15 @@ $(function() {
 <div class="title">RoguelikeRPG.GameLoop Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that storages some important variables from the game itself, like the state and the lvl  
+ <a href="class_roguelike_r_p_g_1_1_game_loop.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a26f21dbe2f4a8dbd6bb17cc48d68e0b0"><td class="memItemLeft" align="right" valign="top"><a id="a26f21dbe2f4a8dbd6bb17cc48d68e0b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Turn</b> (<a class="el" href="class_roguelike_r_p_g_1_1_player.html">Player</a> player)</td></tr>
-<tr class="separator:a26f21dbe2f4a8dbd6bb17cc48d68e0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa012d706ad4d98f0f6fb321d37638c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_roguelike_r_p_g_1_1_game_loop.html#aa012d706ad4d98f0f6fb321d37638c3c">Loop</a> (<a class="el" href="class_roguelike_r_p_g_1_1_player.html">Player</a> player, <a class="el" href="class_roguelike_r_p_g_1_1_grid.html">Grid</a> grid)</td></tr>
+<tr class="memdesc:aa012d706ad4d98f0f6fb321d37638c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that seeks the win/lose conditions  <a href="#aa012d706ad4d98f0f6fb321d37638c3c">More...</a><br /></td></tr>
+<tr class="separator:aa012d706ad4d98f0f6fb321d37638c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -88,13 +91,58 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [ge
 <tr class="memitem:a636d816b0a16620f1776cbdaeadb9f6b"><td class="memItemLeft" align="right" valign="top"><a id="a636d816b0a16620f1776cbdaeadb9f6b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b><code> [get, set]</code></td></tr>
 <tr class="separator:a636d816b0a16620f1776cbdaeadb9f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9b1d3233dbdf14a47571667106ce73"><td class="memItemLeft" align="right" valign="top"><a id="a3c9b1d3233dbdf14a47571667106ce73"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerTurn</b><code> [get, set]</code></td></tr>
-<tr class="separator:a3c9b1d3233dbdf14a47571667106ce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53ffbdbf9f9780b9ae78bef180806fd"><td class="memItemLeft" align="right" valign="top"><a id="ad53ffbdbf9f9780b9ae78bef180806fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>inGame</b><code> [get, set]</code></td></tr>
 <tr class="separator:ad53ffbdbf9f9780b9ae78bef180806fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that storages some important variables from the game itself, like the state and the lvl </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa012d706ad4d98f0f6fb321d37638c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa012d706ad4d98f0f6fb321d37638c3c">&#9670;&nbsp;</a></span>Loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoguelikeRPG.GameLoop.Loop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_roguelike_r_p_g_1_1_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_roguelike_r_p_g_1_1_grid.html">Grid</a>&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function that seeks the win/lose conditions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td></td></tr>
+    <tr><td class="paramname">grid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>GameLoop.cs</li>
 </ul>

@@ -1,26 +1,99 @@
 \hypertarget{class_roguelike_r_p_g_1_1_grid}{}\section{Roguelike\+R\+P\+G.\+Grid Class Reference}
 \label{class_roguelike_r_p_g_1_1_grid}\index{Roguelike\+R\+P\+G.\+Grid@{Roguelike\+R\+P\+G.\+Grid}}
+
+
+ 
+
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a91be273f5c588230875e727f69956db9}\label{class_roguelike_r_p_g_1_1_grid_a91be273f5c588230875e727f69956db9}} 
-void {\bfseries Update\+Positions} ()
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_aa1811392b11d7f50de49a599128832fe}\label{class_roguelike_r_p_g_1_1_grid_aa1811392b11d7f50de49a599128832fe}} 
-List$<$ \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} $>$ {\bfseries Get\+Game\+Objects\+Of\+Type$<$ T $>$} ()
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a025f9368d08af8faf4d3e25765f60aaa}\label{class_roguelike_r_p_g_1_1_grid_a025f9368d08af8faf4d3e25765f60aaa}} 
-void {\bfseries Update\+Known\+Places} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} p)
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a9997a333c0f023d83b56ca14bd592deb}\label{class_roguelike_r_p_g_1_1_grid_a9997a333c0f023d83b56ca14bd592deb}} 
-void {\bfseries Fill} (int level)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid_a91be273f5c588230875e727f69956db9}{Update\+Positions}} ()
+\begin{DoxyCompactList}\small\item\em Function that updates the X and Y values of the objects within the grid \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}} $>$ \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid_aa1811392b11d7f50de49a599128832fe}{Get\+Game\+Objects\+Of\+Type$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em Function that returns all elements of the given type in the grid \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid_a025f9368d08af8faf4d3e25765f60aaa}{Update\+Known\+Places}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} p)
+\begin{DoxyCompactList}\small\item\em Function that shows the map around the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid_a9997a333c0f023d83b56ca14bd592deb}{Fill}} (int level)
+\begin{DoxyCompactList}\small\item\em Function that fills the grid with Game\+Objects \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_ae8f1fe9e449ba7110a910631969c4371}\label{class_roguelike_r_p_g_1_1_grid_ae8f1fe9e449ba7110a910631969c4371}} 
 \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile}{Tile}} \mbox{[},\mbox{]} {\bfseries tiles} = new \mbox{\hyperlink{class_roguelike_r_p_g_1_1_tile}{Tile}}\mbox{[}8, 8\mbox{]}
 \end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a51c1707d9c748e85d4913e5d7697650f}\label{class_roguelike_r_p_g_1_1_grid_a51c1707d9c748e85d4913e5d7697650f}} 
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_map}{Map}} {\bfseries map}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Class that stores all the tiles 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a9997a333c0f023d83b56ca14bd592deb}\label{class_roguelike_r_p_g_1_1_grid_a9997a333c0f023d83b56ca14bd592deb}} 
+\index{Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}!Fill@{Fill}}
+\index{Fill@{Fill}!Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}}
+\subsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Grid.\+Fill (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that fills the grid with Game\+Objects 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_aa1811392b11d7f50de49a599128832fe}\label{class_roguelike_r_p_g_1_1_grid_aa1811392b11d7f50de49a599128832fe}} 
+\index{Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}!Get\+Game\+Objects\+Of\+Type$<$ T $>$@{Get\+Game\+Objects\+Of\+Type$<$ T $>$}}
+\index{Get\+Game\+Objects\+Of\+Type$<$ T $>$@{Get\+Game\+Objects\+Of\+Type$<$ T $>$}!Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}}
+\subsubsection{\texorpdfstring{Get\+Game\+Objects\+Of\+Type$<$ T $>$()}{GetGameObjectsOfType< T >()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_object}{Game\+Object}}$>$ Roguelike\+R\+P\+G.\+Grid.\+Get\+Game\+Objects\+Of\+Type$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that returns all elements of the given type in the grid 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a025f9368d08af8faf4d3e25765f60aaa}\label{class_roguelike_r_p_g_1_1_grid_a025f9368d08af8faf4d3e25765f60aaa}} 
+\index{Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}!Update\+Known\+Places@{Update\+Known\+Places}}
+\index{Update\+Known\+Places@{Update\+Known\+Places}!Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}}
+\subsubsection{\texorpdfstring{Update\+Known\+Places()}{UpdateKnownPlaces()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Grid.\+Update\+Known\+Places (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that shows the map around the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_grid_a91be273f5c588230875e727f69956db9}\label{class_roguelike_r_p_g_1_1_grid_a91be273f5c588230875e727f69956db9}} 
+\index{Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}!Update\+Positions@{Update\+Positions}}
+\index{Update\+Positions@{Update\+Positions}!Roguelike\+R\+P\+G\+::\+Grid@{Roguelike\+R\+P\+G\+::\+Grid}}
+\subsubsection{\texorpdfstring{Update\+Positions()}{UpdatePositions()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Grid.\+Update\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that updates the X and Y values of the objects within the grid 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

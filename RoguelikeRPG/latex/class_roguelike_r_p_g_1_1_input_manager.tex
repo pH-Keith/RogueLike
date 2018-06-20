@@ -2,28 +2,83 @@
 \label{class_roguelike_r_p_g_1_1_input_manager}\index{Roguelike\+R\+P\+G.\+Input\+Manager@{Roguelike\+R\+P\+G.\+Input\+Manager}}
 
 
-Class that manages the inputs of the user.  
+ 
 
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a6b5636c23b08dcafec8911b76155aacb}\label{class_roguelike_r_p_g_1_1_input_manager_a6b5636c23b08dcafec8911b76155aacb}} 
-{\bfseries Input\+Manager} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} grid, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_renderer}{Renderer}} render, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_loop}{Game\+Loop}} game\+Loop)
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a4cf1240d67c0b5f014eb44a752bd973e}\label{class_roguelike_r_p_g_1_1_input_manager_a4cf1240d67c0b5f014eb44a752bd973e}} 
-void {\bfseries Turn\+Command} ()
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_aec0961d74c0742a206f3e0af0cafd2f7}\label{class_roguelike_r_p_g_1_1_input_manager_aec0961d74c0742a206f3e0af0cafd2f7}} 
-void {\bfseries Start\+Screen\+Command} ()
-\item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a320b37790da7ab766eb987471c893a2a}\label{class_roguelike_r_p_g_1_1_input_manager_a320b37790da7ab766eb987471c893a2a}} 
-void {\bfseries Credit\+Commands} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_roguelike_r_p_g_1_1_input_manager_a638a30fe668a76236a2465c759941e1f}{Input\+Manager}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} grid, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_renderer}{Renderer}} render, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_loop}{Game\+Loop}} game\+Loop, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_map}{Map}} map)
+\begin{DoxyCompactList}\small\item\em Class constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_input_manager_a4cf1240d67c0b5f014eb44a752bd973e}{Turn\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Function that catches the input for the actual turn \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_input_manager_aec0961d74c0742a206f3e0af0cafd2f7}{Start\+Screen\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Function that catches the inputs from the Start Screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_input_manager_a320b37790da7ab766eb987471c893a2a}{Credit\+Commands}} ()
+\begin{DoxyCompactList}\small\item\em Function that reads the commands from the Credit Screen \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Class that manages the inputs of the user. 
+
+
+Class that deals with the inputs from the player 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a638a30fe668a76236a2465c759941e1f}\label{class_roguelike_r_p_g_1_1_input_manager_a638a30fe668a76236a2465c759941e1f}} 
+\index{Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}!Input\+Manager@{Input\+Manager}}
+\index{Input\+Manager@{Input\+Manager}!Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Input\+Manager()}{InputManager()}}
+{\footnotesize\ttfamily Roguelike\+R\+P\+G.\+Input\+Manager.\+Input\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}}]{grid,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_renderer}{Renderer}}}]{render,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_loop}{Game\+Loop}}}]{game\+Loop,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_map}{Map}}}]{map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Class constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em grid} & \\
+\hline
+{\em render} & \\
+\hline
+{\em game\+Loop} & \\
+\hline
+{\em map} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a320b37790da7ab766eb987471c893a2a}\label{class_roguelike_r_p_g_1_1_input_manager_a320b37790da7ab766eb987471c893a2a}} 
+\index{Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}!Credit\+Commands@{Credit\+Commands}}
+\index{Credit\+Commands@{Credit\+Commands}!Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Credit\+Commands()}{CreditCommands()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Input\+Manager.\+Credit\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that reads the commands from the Credit Screen 
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_aec0961d74c0742a206f3e0af0cafd2f7}\label{class_roguelike_r_p_g_1_1_input_manager_aec0961d74c0742a206f3e0af0cafd2f7}} 
+\index{Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}!Start\+Screen\+Command@{Start\+Screen\+Command}}
+\index{Start\+Screen\+Command@{Start\+Screen\+Command}!Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Start\+Screen\+Command()}{StartScreenCommand()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Input\+Manager.\+Start\+Screen\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that catches the inputs from the Start Screen 
+
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_input_manager_a4cf1240d67c0b5f014eb44a752bd973e}\label{class_roguelike_r_p_g_1_1_input_manager_a4cf1240d67c0b5f014eb44a752bd973e}} 
+\index{Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}!Turn\+Command@{Turn\+Command}}
+\index{Turn\+Command@{Turn\+Command}!Roguelike\+R\+P\+G\+::\+Input\+Manager@{Roguelike\+R\+P\+G\+::\+Input\+Manager}}
+\subsubsection{\texorpdfstring{Turn\+Command()}{TurnCommand()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Input\+Manager.\+Turn\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that catches the input for the actual turn 
 
 
 

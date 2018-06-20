@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['tile',['Tile',['../class_roguelike_r_p_g_1_1_tile.html',1,'RoguelikeRPG.Tile'],['../class_roguelike_r_p_g_1_1_tile.html#ac00f81529ef711a7875d3810749a729d',1,'RoguelikeRPG.Tile.Tile()']]],
-  ['trap',['Trap',['../class_roguelike_r_p_g_1_1_trap.html',1,'RoguelikeRPG.Trap'],['../class_roguelike_r_p_g_1_1_trap.html#a75f7e3f09db85a57be63fea667c72ad9',1,'RoguelikeRPG.Trap.Trap()']]],
-  ['trapaction',['TrapAction',['../class_roguelike_r_p_g_1_1_trap.html#a29a26903d96d45aee7a705fdbb191418',1,'RoguelikeRPG::Trap']]],
-  ['triggered',['Triggered',['../class_roguelike_r_p_g_1_1_trap.html#a2be484e07ac0dba84b5f1a8d5235db67',1,'RoguelikeRPG::Trap']]]
+  ['removeelement',['RemoveElement',['../class_roguelike_r_p_g_1_1_tile.html#a84a16dca9f4ac818eca0eb58f7c5418b',1,'RoguelikeRPG::Tile']]],
+  ['rendercredits',['RenderCredits',['../class_roguelike_r_p_g_1_1_renderer.html#a6d07f00e8ed8c9d2897a24630a0a353c',1,'RoguelikeRPG::Renderer']]],
+  ['renderer',['Renderer',['../class_roguelike_r_p_g_1_1_renderer.html',1,'RoguelikeRPG.Renderer'],['../class_roguelike_r_p_g_1_1_renderer.html#a398c2192581cc61abc4ad6a0299cab96',1,'RoguelikeRPG.Renderer.Renderer()']]],
+  ['renderstartscreen',['RenderStartScreen',['../class_roguelike_r_p_g_1_1_renderer.html#a271d86335afd2b6ef8c2ca673baecb21',1,'RoguelikeRPG::Renderer']]],
+  ['renderui',['RenderUI',['../class_roguelike_r_p_g_1_1_renderer.html#a74f7f40cef19e77afac474d526df9e43',1,'RoguelikeRPG::Renderer']]],
+  ['roguelikerpg',['RoguelikeRPG',['../namespace_roguelike_r_p_g.html',1,'']]]
 ];

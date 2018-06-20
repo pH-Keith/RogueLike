@@ -1,11 +1,15 @@
 \hypertarget{class_roguelike_r_p_g_1_1_game_loop}{}\section{Roguelike\+R\+P\+G.\+Game\+Loop Class Reference}
 \label{class_roguelike_r_p_g_1_1_game_loop}\index{Roguelike\+R\+P\+G.\+Game\+Loop@{Roguelike\+R\+P\+G.\+Game\+Loop}}
+
+
+Class that storages some important variables from the game itself, like the state and the lvl  
+
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_game_loop_a26f21dbe2f4a8dbd6bb17cc48d68e0b0}\label{class_roguelike_r_p_g_1_1_game_loop_a26f21dbe2f4a8dbd6bb17cc48d68e0b0}} 
-void {\bfseries Turn} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_roguelike_r_p_g_1_1_game_loop_aa012d706ad4d98f0f6fb321d37638c3c}{Loop}} (\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}} player, \mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}} grid)
+\begin{DoxyCompactList}\small\item\em Function that seeks the win/lose conditions \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,12 +19,34 @@ string {\bfseries State}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \mbox{\Hypertarget{class_roguelike_r_p_g_1_1_game_loop_a636d816b0a16620f1776cbdaeadb9f6b}\label{class_roguelike_r_p_g_1_1_game_loop_a636d816b0a16620f1776cbdaeadb9f6b}} 
 int {\bfseries Level}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_game_loop_a3c9b1d3233dbdf14a47571667106ce73}\label{class_roguelike_r_p_g_1_1_game_loop_a3c9b1d3233dbdf14a47571667106ce73}} 
-bool {\bfseries Player\+Turn}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\item 
 \mbox{\Hypertarget{class_roguelike_r_p_g_1_1_game_loop_ad53ffbdbf9f9780b9ae78bef180806fd}\label{class_roguelike_r_p_g_1_1_game_loop_ad53ffbdbf9f9780b9ae78bef180806fd}} 
 bool {\bfseries in\+Game}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that storages some important variables from the game itself, like the state and the lvl 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_roguelike_r_p_g_1_1_game_loop_aa012d706ad4d98f0f6fb321d37638c3c}\label{class_roguelike_r_p_g_1_1_game_loop_aa012d706ad4d98f0f6fb321d37638c3c}} 
+\index{Roguelike\+R\+P\+G\+::\+Game\+Loop@{Roguelike\+R\+P\+G\+::\+Game\+Loop}!Loop@{Loop}}
+\index{Loop@{Loop}!Roguelike\+R\+P\+G\+::\+Game\+Loop@{Roguelike\+R\+P\+G\+::\+Game\+Loop}}
+\subsubsection{\texorpdfstring{Loop()}{Loop()}}
+{\footnotesize\ttfamily void Roguelike\+R\+P\+G.\+Game\+Loop.\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_player}{Player}}}]{player,  }\item[{\mbox{\hyperlink{class_roguelike_r_p_g_1_1_grid}{Grid}}}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that seeks the win/lose conditions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+{\em grid} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

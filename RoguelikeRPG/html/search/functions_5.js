@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['npc',['NPC',['../class_roguelike_r_p_g_1_1_n_p_c.html#a2df0707bbdfb1078c414b87a1dd4cf5c',1,'RoguelikeRPG::NPC']]]
+  ['getgameobjectsoftype_3c_20t_20_3e',['GetGameObjectsOfType&lt; T &gt;',['../class_roguelike_r_p_g_1_1_grid.html#aa1811392b11d7f50de49a599128832fe',1,'RoguelikeRPG::Grid']]]
 ];

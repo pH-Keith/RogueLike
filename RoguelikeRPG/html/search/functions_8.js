@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tile',['Tile',['../class_roguelike_r_p_g_1_1_tile.html#ac00f81529ef711a7875d3810749a729d',1,'RoguelikeRPG::Tile']]],
-  ['trap',['Trap',['../class_roguelike_r_p_g_1_1_trap.html#a75f7e3f09db85a57be63fea667c72ad9',1,'RoguelikeRPG::Trap']]],
-  ['trapaction',['TrapAction',['../class_roguelike_r_p_g_1_1_trap.html#a29a26903d96d45aee7a705fdbb191418',1,'RoguelikeRPG::Trap']]]
+  ['map',['Map',['../class_roguelike_r_p_g_1_1_map.html#abaf4fc0e21d2f056464fb0e35d9cb14c',1,'RoguelikeRPG::Map']]],
+  ['move',['Move',['../class_roguelike_r_p_g_1_1_character.html#a9b78a6de5cabe2c59d0b965733d9d63b',1,'RoguelikeRPG::Character']]]
 ];

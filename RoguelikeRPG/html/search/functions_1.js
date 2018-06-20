@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['drop',['Drop',['../class_roguelike_r_p_g_1_1_item.html#ae46e19cf36347b93f56704516c0c6618',1,'RoguelikeRPG::Item']]]
+  ['creditcommands',['CreditCommands',['../class_roguelike_r_p_g_1_1_input_manager.html#a320b37790da7ab766eb987471c893a2a',1,'RoguelikeRPG::InputManager']]]
 ];
