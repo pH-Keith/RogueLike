@@ -5,24 +5,36 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RoguelikeRPG
-{
-    /// <summary>
-    /// Class that manages the inputs of the user.
-    /// </summary>
+{/// <summary>
+/// Class that deals with the inputs from the player
+/// </summary>
     class InputManager
     {
         private Player player;
+        private Map map;
         private Grid grid;
         private Renderer render;
         private GameLoop gameLoop;
-        public InputManager(Player player, Grid grid, Renderer render, GameLoop gameLoop)
+        /// <summary>
+        /// Class constructor
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="grid"></param>
+        /// <param name="render"></param>
+        /// <param name="gameLoop"></param>
+        /// <param name="map"></param>
+        public InputManager(Player player, Grid grid, Renderer render, GameLoop gameLoop, Map map)
         {
             this.grid = grid;
             this.player = player;
             this.render = render;
             this.gameLoop = gameLoop;
+            this.map = map;
 
         }
+        /// <summary>
+        /// Function that catches the input for the actual turn
+        /// </summary>
         public void TurnCommand()
         {
             switch (Console.ReadKey().Key)
@@ -44,9 +56,20 @@ namespace RoguelikeRPG
                     player.HP--;
                     break;
                 case ConsoleKey.E:
+
+                    if (grid.tiles[player.X, player.Y].Objects.Contains(map))
+                    {
+                        map.Use(grid);
+                        grid.tiles[player.X, player.Y].RemoveElement(map);
+                        player.HP--;
+
+                    }
                     break;
             }
         }
+        /// <summary>
+        /// Function that catches the inputs from the Start Screen
+        /// </summary>
         public void StartScreenCommand()
         {
             switch (Console.ReadKey().Key)
@@ -64,6 +87,9 @@ namespace RoguelikeRPG
                     break;
             }
         }
+        /// <summary>
+        /// Function that reads the commands from the Credit Screen
+        /// </summary>
         public void CreditCommands()
         {
             Console.ReadKey();
