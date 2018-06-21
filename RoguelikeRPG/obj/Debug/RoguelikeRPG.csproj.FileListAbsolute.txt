@@ -7,3 +7,11 @@ D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.csprojResolveAssemblyRe
 D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.csproj.CoreCompileInputs.cache
 D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.exe
 D:\School work\poop3\RoguelikeRPG\obj\Debug\RoguelikeRPG.pdb
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\obj\Debug\RoguelikeRPG.csprojResolveAssemblyReference.cache
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\obj\Debug\RoguelikeRPG.csproj.CoreCompileInputs.cache
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\bin\Debug\RoguelikeRPG.exe.config
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\bin\Debug\RoguelikeRPG.xml
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\bin\Debug\RoguelikeRPG.exe
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\bin\Debug\RoguelikeRPG.pdb
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\obj\Debug\RoguelikeRPG.exe
+C:\Users\Dudu Loyola\Desktop\Please Work\RogueLike\RoguelikeRPG\obj\Debug\RoguelikeRPG.pdb

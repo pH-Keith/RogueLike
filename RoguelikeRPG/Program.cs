@@ -12,20 +12,17 @@ namespace RoguelikeRPG
         {
             Random random = new Random();
            
-            
             ObjectsList obj = new ObjectsList("ObjectsList.txt");
             List<ObjectData> test = new List<ObjectData>();
             Grid g = new Grid();
-            Player player = new Player(0, random.Next(0, 8));
-            
+            Player player = new Player(0, random.Next(0, 8));       
             GameLoop gameLoop = new GameLoop();
             g.tiles[player.X,player.Y].Objects.Push(player);
-            //g.UpdatePositions();
             Renderer render = new Renderer(player,g, gameLoop);
-            InputManager input = new InputManager(player, g, render, gameLoop);
+            InputManager input = new InputManager(player, g, render, gameLoop, g.map);
             while (gameLoop.inGame)
             {
-               
+                gameLoop.Loop(player, g);
                 g.UpdateKnownPlaces(player);
                 switch(gameLoop.State)
                 {

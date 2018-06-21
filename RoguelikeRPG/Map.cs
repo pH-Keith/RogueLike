@@ -15,14 +15,12 @@ namespace RoguelikeRPG
         /// <summary>
         /// Manages the Map initialization.
         /// </summary>
-        /// <param name="obj">Struct holding the info of the map</param>
         /// <param name="x">X cordinate</param>
         /// <param name="y">Y cordinate</param>
-        public Map(ObjectData obj, int x, int y)
+        public Map( int x, int y)
         {
-            this.Icon = obj.icon;
-            this.Name = obj.name;
-            this.ID = obj.id;
+            this.Icon = "m";
+            this.Name = "Map";
             this.X = x;
             this.Y = y;
         }

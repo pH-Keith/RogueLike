@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RoguelikeRPG</name>
+    </assembly>
+    <members>
+        <member name="T:RoguelikeRPG.Character">
+            <summary>
+            Class that handles all of the functions in regards to the Character
+            sub type from GameObject.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Character.HP">
+            <summary>
+            Holds health value.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Character.Move(System.Char,RoguelikeRPG.Grid)">
+            <summary>
+            Changes the characters cordinates depending on the direction given.
+            </summary>
+            <param name="dir"></param>
+            <param name="grid"></param>
+        </member>
+        <member name="T:RoguelikeRPG.Food">
+            <summary>
+            Class that handles all of the functions in regards to the Food
+            sub type from items.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Food.#ctor(RoguelikeRPG.ObjectData,System.Int32,System.Int32)">
+            <summary>
+            Initializer of the Food Object.
+            </summary>
+            <param name="obj">Struct that is used to define the object.</param>
+            <param name="x">X location</param>
+            <param name="y">Y location</param>
+        </member>
+        <member name="P:RoguelikeRPG.Food.HPIncrease">
+            <summary>
+            Holds the ammount of HP said item will add when consumed.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Food.Use(RoguelikeRPG.Player)">
+            <summary>
+            Uses the item, removing it from the backpack and adding the health
+            it gives, while making sure there isnt an overheal.
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="T:RoguelikeRPG.GameLoop">
+            <summary>
+            Class that storages some important variables from the game itself, like the state and the lvl
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.GameLoop.Loop(RoguelikeRPG.Player,RoguelikeRPG.Grid)">
+            <summary>
+            Function that seeks the win/lose conditions
+            </summary>
+            <param name="player"></param>
+            <param name="grid"></param>
+        </member>
+        <member name="T:RoguelikeRPG.GameObject">
+            <summary>
+            Abstract class that holds information for the objects.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.Grid">
+            <summary>
+            Class that stores all the tiles
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Grid.UpdatePositions">
+            <summary>
+            Function that updates the X and Y values of the objects within the grid
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Grid.GetGameObjectsOfType``1">
+            <summary>
+            Function that returns all elements of the given type in the grid
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:RoguelikeRPG.Grid.UpdateKnownPlaces(RoguelikeRPG.Player)">
+            <summary>
+            Function that shows the map around the player
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:RoguelikeRPG.Grid.Fill(System.Int32)">
+            <summary>
+            Function that fills the grid with GameObjects
+            </summary>
+            <param name="level"></param>
+        </member>
+        <member name="T:RoguelikeRPG.IAttackPower">
+            <summary>
+            Interface that holds the Attack Power values.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.IHP">
+            <summary>
+            Interface that holds the health values.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.InputManager">
+            <summary>
+            Class that deals with the inputs from the player
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.InputManager.#ctor(RoguelikeRPG.Player,RoguelikeRPG.Grid,RoguelikeRPG.Renderer,RoguelikeRPG.GameLoop,RoguelikeRPG.Map)">
+            <summary>
+            Class constructor
+            </summary>
+            <param name="player"></param>
+            <param name="grid"></param>
+            <param name="render"></param>
+            <param name="gameLoop"></param>
+            <param name="map"></param>
+        </member>
+        <member name="M:RoguelikeRPG.InputManager.TurnCommand">
+            <summary>
+            Function that catches the input for the actual turn
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.InputManager.StartScreenCommand">
+            <summary>
+            Function that catches the inputs from the Start Screen
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.InputManager.CreditCommands">
+            <summary>
+            Function that reads the commands from the Credit Screen
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.IPos">
+            <summary>
+            Interface that holds the positional values.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.Item">
+            <summary>
+            Abstract class that handles all of the functions in regards to the Item
+            sub type from GameObject.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Item.Weight">
+            <summary>
+            Holds the Weight of said item.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Item.PickUp(RoguelikeRPG.Player)">
+            <summary>
+            Method to add specified item, to the specified player's Backpack.
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:RoguelikeRPG.Item.Drop">
+            <summary>
+            Method to drop specified item, from the specified player's Backpack.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.Map">
+            <summary>
+            Class that handles all of the functions in regards to the Map
+            sub type from Item.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Map.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Manages the Map initialization.
+            </summary>
+            <param name="x">X cordinate</param>
+            <param name="y">Y cordinate</param>
+        </member>
+        <member name="M:RoguelikeRPG.Map.Use(RoguelikeRPG.Grid)">
+            <summary>
+            Manages the Use of the map.
+            </summary>
+            <param name="grid"></param>
+        </member>
+        <member name="T:RoguelikeRPG.NPC">
+            <summary>
+            Class that handles all of the functions in regards to the NPC
+            sub type from Character.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.NPC.#ctor(RoguelikeRPG.ObjectData,System.Int32,System.Int32)">
+            <summary>
+            Initializer of the NPC object on specified cordinates and the
+            specified NPC characteristics.
+            </summary>
+            <param name="obj">Struct that holds all of the NPC info</param>
+            <param name="x">X cordinate</param>
+            <param name="y">Y cordinate</param>
+        </member>
+        <member name="P:RoguelikeRPG.NPC.Hostile">
+            <summary>
+            Handles the state of the NPC.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.NPC.AttackPower">
+            <summary>
+            Handles the AttackPower of the NPC.
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.Player">
+            <summary>
+            Class that handles all of the functions in regards to the Player
+            sub type from Character.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Player.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes the Player with the given coordinates of X and Y.
+            </summary>
+            <param name="X">X axis of the player's initial location.</param>
+            <param name="Y">Y axis of the player's initial location.</param>
+        </member>
+        <member name="M:RoguelikeRPG.Player.Attack(RoguelikeRPG.NPC)">
+            <summary>
+            Attacks the enemy NPC with current weapon.
+            </summary>
+            <param name="target">Target NPC</param>
+        </member>
+        <member name="M:RoguelikeRPG.Player.Eat(RoguelikeRPG.Food)">
+            <summary>
+            Consomes Specified Food.
+            </summary>
+            <param name="food">Food to be eaten</param>
+        </member>
+        <member name="M:RoguelikeRPG.Player.PickupItem(RoguelikeRPG.Item)">
+            <summary>
+            Picks up specified item.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="T:RoguelikeRPG.Renderer">
+            <summary>
+            Class that handles of the rendering used.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Renderer.#ctor(RoguelikeRPG.Player,RoguelikeRPG.Grid,RoguelikeRPG.GameLoop)">
+            <summary>
+            Initializes the renderer.
+            </summary>
+            <param name="player"></param>
+            <param name="grid"></param>
+            <param name="gameLoop"></param>
+        </member>
+        <member name="M:RoguelikeRPG.Renderer.RenderStartScreen">
+            <summary>
+            Renders the Start Screen with WriteLine's
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Renderer.RenderCredits">
+            <summary>
+            Renders the Credits with WriteLine's.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Renderer.RenderUI">
+            <summary>
+            Renders the UI with WriteLine's
+            </summary>
+        </member>
+        <member name="T:RoguelikeRPG.Tile">
+            <summary>
+            A Class that is used to populate the grid and to also store objects.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Tile.X">
+            <summary>
+            Defines its position in the Grid on the X axis.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Tile.Y">
+            <summary>
+            Defines its position in the Grid on the Y axis.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Tile.Unknown">
+            <summary>
+            Manages the Fog of war element by holding the information that it
+            has already been found or has yet to be found.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Tile.IsExit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Tile.RemoveElement(RoguelikeRPG.GameObject)">
+            <summary>
+            Used to remove said object in specified tile.
+            </summary>
+            <param name="obj">Object to be removed.</param>
+        </member>
+        <member name="M:RoguelikeRPG.Tile.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Tile initialization.
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:RoguelikeRPG.Tile.UpdatePos">
+            <summary>
+            Updates the position of specified GameObject on the tile.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Tile.AddObject(System.Int32)">
+            <summary>
+            Adds Objects into tiles
+            </summary>
+            <param name="ID"></param>
+        </member>
+        <member name="T:RoguelikeRPG.Trap">
+            <summary>
+            Class that handles all of the functions in regards to the Trap
+            sub type from GameObject.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Trap.#ctor(RoguelikeRPG.ObjectData,System.Int32,System.Int32)">
+            <summary>
+            Handles initialization of the Trap object.
+            </summary>
+            <param name="obj"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="P:RoguelikeRPG.Trap.Triggered">
+            <summary>
+            Handles the managment of the Trap's State of being Triggered.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Trap.MaxDamage">
+            <summary>
+            Handles the managment of the Trap's Max Damage, cannot be changed.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Trap.TrapAction(RoguelikeRPG.Grid)">
+            <summary>
+            Checks if the player is in a trap tile in the grid, checks if said
+            trap is triggered already or not and finally deals damage if it
+            hasnt been triggered already. Causing the Traps state to be
+            Triggered.
+            </summary>
+            <param name="grid">Specified Grid</param>
+        </member>
+        <member name="T:RoguelikeRPG.Weapon">
+            <summary>
+            Class that handles all of the functions in regards to the Weapon
+            sub type from items.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Weapon.#ctor(RoguelikeRPG.ObjectData,System.Int32,System.Int32)">
+            <summary>
+            Handles initialization of the Weapon object.
+            </summary>
+            <param name="obj">Struct that holds all of the information
+            regarding the weapon we are initializing</param>
+            <param name="x">X cordinate</param>
+            <param name="y">Y cordinate</param>
+        </member>
+        <member name="P:RoguelikeRPG.Weapon.AttackPower">
+            <summary>
+            Handles the managment of the weapon's Attack Power.
+            </summary>
+        </member>
+        <member name="P:RoguelikeRPG.Weapon.Durability">
+            <summary>
+            Handles the managment of the weapon's Durability.
+            </summary>
+        </member>
+        <member name="M:RoguelikeRPG.Weapon.Use(RoguelikeRPG.NPC)">
+            <summary>
+            Damages said NPC with the weapon's Attack Power
+            </summary>
+            <param name="npc">Targeted Enemy</param>
+        </member>
+        <member name="M:RoguelikeRPG.Weapon.Equip(RoguelikeRPG.Player)">
+            <summary>
+            The Player equips the selected Weapon. Removing it from his
+            Backpack.
+            </summary>
+            <param name="player">Specified Player</param>
+        </member>
+        <member name="M:RoguelikeRPG.Weapon.PickUp(RoguelikeRPG.Player,RoguelikeRPG.Grid)">
+            <summary>
+            Adds the Weapon to the Backpack of the player, on the
+            Grid. Removing it from the Grid after.
+            </summary>
+            <param name="player">Specified Player</param>
+            <param name="grid">Specified Grid</param>
+        </member>
+    </members>
+</doc>
